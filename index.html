@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+
+    <!-- meta tag -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- meta tag -->
+
+
+    <title>jQuery</title>
+    <link rel="icon" href="images/jq.png">
+    
+    <!-- css links -->
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+          <link rel="stylesheet" href="css/media.css">
+    <!-- css links -->
+  </head>
+
+  <!-- body start -->
+  <body>
+    <!-- jQuery UI demo start -->
+
+    <div class="container p-1">
+
+
+
+
+
+      <!-- ex1 -->
+      <div id="draggable" class="ui-widget-content">
+        <p>Drag me around</p>
+      </div>
+
+      <!-- ex2 -->
+      <hr>
+      <div id="draggable1" class="ui-widget-content">
+        <p>I can move only y axis.</p>
+      </div>
+
+
+      <!-- ex3 -->
+      <hr>
+      <div id="draggable2" class="ui-widget-content mb-2">
+        <p>Drag me to my target</p>
+      </div>
+      <div id="droppable" class="ui-widget-header mb-2">
+        <p>Drop here</p>
+      </div>
+
+      <!-- ex4 -->
+      <hr>
+      <div id="resizable" class="ui-widget-content mt-3">
+        <h3 class="ui-widget-header">Animate</h3>
+      </div>
+
+      <!-- ex5 -->
+      <hr>
+
+      <p>selectable:</p>
+      <ol id="selectable">
+        <li class="ui-widget-content">Item 1</li>
+        <li class="ui-widget-content">Item 2</li>
+        <li class="ui-widget-content">Item 3</li>
+        <li class="ui-widget-content">Item 4</li>
+        <li class="ui-widget-content">Item 5</li>
+        <li class="ui-widget-content">Item 6</li>
+        <li class="ui-widget-content">Item 7</li>
+      </ol>
+
+
+      <!-- ex6 -->
+      <hr>
+
+      <p>sortable</p>
+
+      <ul id="sortable">
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7</li>
+      </ul>
+
+
+      <!-- ex7 -->
+
+      <hr>
+
+
+      <div id="accordion">
+  <h3>Section 1</h3>
+  <div>
+    <p>
+    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+    </p>
+  </div>
+
+  <h3>Section 3</h3>
+  <div>
+    <p>
+    Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+    Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+    ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+    lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+    </p>
+    <ul>
+      <li>List item one</li>
+      <li>List item two</li>
+      <li>List item three</li>
+    </ul>
+  </div>
+
+</div>
+
+<!-- ex8 -->
+
+    <hr>
+
+    <div class="ui-widget">
+      <label for="tags">programmingLanguage: </label>
+      <input id="tags">
+    </div>
+
+
+    <!-- ex9 -->
+    <hr>
+
+    <div class="widget">
+  <h1>Controlgroup</h1>
+  <fieldset>
+    <legend>Rental Car</legend>
+    <div class="controlgroup">
+      <select id="car-type">
+        <option>Compact car</option>
+        <option>Midsize car</option>
+        <option>Full size car</option>
+        <option>SUV</option>
+        <option>Luxury</option>
+        <option>Truck</option>
+        <option>Van</option>
+      </select>
+      <label for="transmission-standard">Standard</label>
+      <input type="radio" name="transmission" id="transmission-standard">
+      <label for="transmission-automatic">Automatic</label>
+      <input type="radio" name="transmission" id="transmission-automatic">
+      <label for="insurance">Insurance</label>
+      <input type="checkbox" name="insurance" id="insurance">
+      <label for="horizontal-spinner" class="ui-controlgroup-label"># of cars</label>
+      <input id="horizontal-spinner" class="ui-spinner-input">
+      <button>Book Now!</button>
+    </div>
+  </fieldset>
+  <br>
+  <fieldset>
+    <legend>Rental Car</legend>
+    <div class="controlgroup-vertical">
+      <select>
+        <option>Compact car</option>
+        <option>Midsize car</option>
+        <option>Full size car</option>
+        <option>SUV</option>
+        <option>Luxury</option>
+        <option>Truck</option>
+        <option>Van</option>
+      </select>
+      <label for="transmission-standard-v">Standard</label>
+      <input type="radio" name="transmission-v" id="transmission-standard-v">
+      <label for="transmission-automatic-v">Automatic</label>
+      <input type="radio" name="transmission-v" id="transmission-automatic-v">
+      <label for="insurance-v">Insurance</label>
+      <input type="checkbox" name="insurance" id="insurance-v">
+      <label for="vertical-spinner" class="ui-controlgroup-label"># of cars</label>
+      <input id="vertical-spinner" class="ui-spinner-input">
+      <button id="book">Book Now!</button>
+    </div>
+  </fieldset>
+</div>
+
+<hr>
+
+<p>Date: <input type="text" id="datepicker" size="30"></p>
+ 
+<p>Animations:<br>
+  <select id="anim">
+    <option value="show">Show (default)</option>
+    <option value="slideDown">Slide down</option>
+    <option value="fadeIn">Fade in</option>
+    <option value="blind">Blind (UI Effect)</option>
+    <option value="bounce">Bounce (UI Effect)</option>
+    <option value="clip">Clip (UI Effect)</option>
+    <option value="drop">Drop (UI Effect)</option>
+    <option value="fold">Fold (UI Effect)</option>
+    <option value="slide">Slide (UI Effect)</option>
+    <option value="">None</option>
+  </select>
+</p>
+
+<hr>
+
+<div id="dialog" title="Basic dialog">
+  <p>This is an animated dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+</div>
+ 
+<button id="opener">Open Dialog</button>
+
+
+<!-- ex12 -->
+
+<hr>
+
+<div id="progressbar"><div class="progress-label">Loading...</div></div>
+
+<hr>
+
+<div class="demo">
+ 
+<form action="#">
+ 
+  <fieldset>
+    <label for="speed">Select a speed</label>
+    <select name="speed" id="speed">
+      <option>Slower</option>
+      <option>Slow</option>
+      <option selected="selected">Medium</option>
+      <option>Fast</option>
+      <option>Faster</option>
+    </select>
+ 
+    <label for="files">Select a file</label>
+    <select name="files" id="files">
+      <optgroup label="Scripts">
+        <option value="jquery">jQuery.js</option>
+        <option value="jqueryui">ui.jQuery.js</option>
+      </optgroup>
+      <optgroup label="Other files">
+        <option value="somefile">Some unknown file</option>
+        <option value="someotherfile">Some other file with a very long option text</option>
+      </optgroup>
+    </select>
+ 
+    <label for="number">Select a number</label>
+    <select name="number" id="number">
+      <option>1</option>
+      <option selected="selected">2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
+      <option>7</option>
+      <option>8</option>
+      <option>9</option>
+      <option>10</option>
+      <option>11</option>
+      <option>12</option>
+      <option>13</option>
+      <option>14</option>
+      <option>15</option>
+      <option>16</option>
+      <option>17</option>
+      <option>18</option>
+      <option>19</option>
+    </select>
+ 
+    <label for="salutation">Select a title</label>
+    <select name="salutation" id="salutation">
+      <option disabled="" selected="">Please pick one</option>
+      <option>Mr.</option>
+      <option>Mrs.</option>
+      <option>Dr.</option>
+      <option>Prof.</option>
+      <option>Other</option>
+    </select>
+  </fieldset>
+ 
+</form>
+ 
+</div>
+
+<hr>
+
+<div id="slider"></div>
+
+
+<hr>
+
+
+<p>
+  <label for="spinner">Select a value:</label>
+  <input id="spinner" name="value">
+</p>
+ 
+<p>
+  <button id="disable">Toggle disable/enable</button>
+  <button id="destroy">Toggle widget</button>
+</p>
+ 
+<p>
+  <button id="getvalue">Get value</button>
+  <button id="setvalue">Set value to 5</button>
+</p>
+
+
+
+
+
+
+
+    </div>
+
+
+  <!-- js start -->
+   <script  src="js/jquery-3.7.1.min.js"></script>
+   <script  src="js/external/jquery/jquery.js"></script>
+   <script  src="js/jquery-ui.min.js"></script>
+   <script  src="js/bootstrap.bundle.min.js"></script>
+   <script  src="js/script.js"></script>
+  <!-- js end  -->
+
+  </body>
+  <!-- body end -->
+
+</html>
